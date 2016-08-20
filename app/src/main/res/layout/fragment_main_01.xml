@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <bond.com.commontest.myView.AlwaysMarqueeTextView
+        android:text="fragment01 this is AlwaysMarqueeTextView"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+    <TextView
+        android:text="this is textView must get focus"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+    <Button
+        android:id="@+id/item01"
+        android:text="item01"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120dp"
+        android:layout_height="60dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
